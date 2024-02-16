@@ -1,7 +1,14 @@
 .App {
-  text-align: center;
+  margin: 0 auto;
 }
 
+.cardBook{
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  background-color: aliceblue;
+  text-align: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +35,15 @@
   color: #61dafb;
 }
 
+.descricao-caixa{
+  margin: auto;
+  width: 30%;
+}
+
+.descricao{
+  text-align: justify;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +52,4 @@
     transform: rotate(360deg);
   }
 }
+
