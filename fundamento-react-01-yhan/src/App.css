@@ -1,26 +1,26 @@
 .App {
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cardBook{
-  width: 50%;
-  margin: 0 auto;
+  width: calc(33% - 20px);
+  margin: 10px;
+  border-radius: 15%;
   align-items: center;
   background-color: #4987e4fd;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.descricao-caixa{
+  margin: auto;
+  width: 30%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.descricao{
+  text-align: justify;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,24 +34,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.descricao-caixa{
-  margin: auto;
-  width: 30%;
-}
-
-.descricao{
-  text-align: justify;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .cardTitle {
