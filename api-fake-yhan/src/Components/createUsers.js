@@ -15,15 +15,14 @@ export default function CreateUsers(){
     
 
 
-    axios.post('https://reqres.in/api/users?page=2', user)
-        .then(
-            response => {
-            console.log(response);
+    axios.post('https://reqres.in/api/users', user)
+        .then((response) => {
+            console.log(response)
             alert(response)
-        }
-        )
-        .catch(error =>{console.log(error);
-            alert(error)        
+        })
+        .catch((error) =>{
+            console.log(error);
+            // alert('errado')     
         })
 
 
@@ -31,7 +30,9 @@ export default function CreateUsers(){
 
 
     return(
-            <form onSubmit={createUsers}>
+            <form onSubmit={createUsers} className='form'>
+                <h1>Formulário de criação de usários</h1>
+
                 <input 
                 type='text'
                 placeholder='Insira seu nome'
